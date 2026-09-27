@@ -26,8 +26,7 @@ namespace my {
             Users MUST provide the FOLDER contain ALL the face_detection_short.tflite, 
             face_landmark.tflite and iris_landmark.tflite 
             */
-            explicit IrisLandmark(std::string modelPath);
-            // ~IrisLandmark() override = default; 
+            explicit IrisLandmark(std::string modelPath); 
 
             using my::FaceLandmark::loadImageToInput;
             using my::FaceLandmark::loadBytesToInput;
@@ -86,7 +85,6 @@ namespace my {
             */
             void runEyeInference(bool isLeftEye);
 
-            // next block of private:
             ModelLoader m_leftIrisLandmarker;
             ModelLoader m_rightIrisLandmarker;
 

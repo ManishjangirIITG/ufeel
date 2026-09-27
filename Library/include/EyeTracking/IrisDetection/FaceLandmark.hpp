@@ -17,9 +17,7 @@ namespace my {
             and face_landmark.tflite, 
             */
             explicit FaceLandmark(std::string modelPath);
-            // ~FaceLandmark() override = default; 
 
-            // Bring base class overloads into scope
             using my::FaceDetection::loadImageToInput;
             using my::FaceDetection::loadBytesToInput;
             using my::FaceDetection::loadOutput;

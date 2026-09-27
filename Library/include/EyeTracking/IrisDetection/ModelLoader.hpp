@@ -178,8 +178,6 @@ namespace my {
             */
             [[nodiscard]] auto convertToRGB(const cv::Mat& in) const -> cv::Mat;
 
-
-        // next block of private:
             /*
             Information of input tensors
             */
